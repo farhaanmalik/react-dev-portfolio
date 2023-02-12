@@ -10,7 +10,7 @@ const Home = () => {
     name: "Farhaan Malik",
     myRole: "Frontend Developer",
     myInfo: "Building & Maintaining responsive websites. Exploring new Web designs. Converting Figma design into HTML Code.",
-    image: "./images/main.jpg",
+    image: "../images/main.jpg",
   }
   return (
     <>
