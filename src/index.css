@@ -1,13 +1,742 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.5px;
+    scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 0rem;
+}
+
+body {
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+:root {
+    --white: #fff;
+    --bg-color: #ebf0f7;
+    --primary-color: #f8456c;
+    --text-color: #6f6f6f;
+    --main-text-color: #2e2e2e;
+    --box-shadow-color: #d3dadf;
+    --lg-1: #ff0037;
+    --lg-2: #d73bc5;
+    --lg-3: #8100f9;
+    --hr-color: #a7a7a7;
+    --btn-hover: #f8456cce;
+}
+h1, h2, h4, h5, h6{
+    color: var(--main-text-color);
+}
+
+header {
+    max-width: 130rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+}
+.navbar-list li {
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.navbar-link {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-text-color);
+    transition: color .3s;
+}
+
+.navbar-link:hover {
+    color: var(--primary-color);
+}
+.menu-btn{
+    display: none;
+    font-size: 2.8rem;
+    padding: 0 2px;
+    color: var(--primary-color);
+}
+
+.logo-link{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--main-text-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+.sm-logo-img{
+    display: none;
+    width: 5.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
+hr {
+    color: var(--hr-color);
+}
+
+
+/*===== Hero section CSS =====*/
+.container {
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding: 6rem 2rem;
+}
+.section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-top-data {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.hero-heading {
+    letter-spacing: 0.1rem;
+    font-size: 4.5rem;
+    line-height: 3.9rem;
+}
+.hero-heading .myrole{
+    font-size: 3rem;
+}
+.name {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.hero-para {
+    margin-top: .8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.grid {
+    display: grid;
+    gap: 5rem;
+    padding: 6rem 5rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section-hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture {
+    text-align: right;
+}
+picture img {
+    width: 65%;
+    padding: 2px;
+    border-radius: 10rem 5rem;
+    box-shadow: 2rem -2rem 2px var(--primary-color), 
+                -2rem 2rem 2px var(--primary-color);
+    background-color: var(--bg-color);
+    
+}
+
+
+/*===== All button CSS =====*/
+.btn {
+    max-width: fit-content;
+    margin-top: 1.5rem;
+    padding: .6rem 0;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    background: var(--primary-color);
+    transition: all .4s;
+}
+
+.btn:hover {
+    transform: scale(.95);
+    background: var(--btn-hover);
+    color: var(--white);
+}
+
+.btn a {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+    padding: 3rem;
+}
+
+
+/*===== About Section CSS =====*/
+.about-section{
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding-top: 5rem;
+}
+.edt-card{
+    padding: 0rem 2rem;
+}
+.education-box{
+    line-height: 2rem;
+}
+.education-box h4{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    padding-top: 2rem;
+    position: relative;
+}
+.education-box h4::before{
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: -2rem;
+    width: 1.5rem;
+    height: .5rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+.education-box p{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.ed-skl-card{
+    max-width: 45rem;
+    min-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+.ed-skl-card:first-child{
+    background-color: var(--bg-color);
+    box-shadow: 5px 5px 10px var(--box-shadow-color),
+    -1px -1px 5px var(--box-shadow-color);
+}
+.ed-skl-card h2{
+    font-weight: 700;
+}
+
+.skill-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 2rem;
+}
+.skill{
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 1rem 1.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px var(--box-shadow-color);
+}
+
+/*===== Common heading in Services, Portfolio & Contact section =====*/
+.common-heading{
+    margin: 0;
+    padding: 0;
+}
+.common-heading h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+.common-subheading{
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--primary-color);
+}
+
+/*==== Card For Services & Portfolio section ==== */
+.card-section{
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding-top: 5rem;
+}
+.card{      
+    max-width: 45rem;
+    min-width: 25rem;
+    margin: auto;
+    padding: 2rem;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+/*===== Service section  =====*/
+.service-card{
+    background: linear-gradient(150deg, var(--bg-color), var(--bg-color), var(--white));
+    box-shadow: 5px 5px 10px var(--box-shadow-color),
+    -1px -1px 8px var(--box-shadow-color);
+    position: relative;
+    transition: all .3s linear;
+}
+.service-card::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: .1;
+    border-radius: 5px;
+    background: linear-gradient(20deg, var(--lg-1), var(--lg-3));
+    transition: all .3s linear;
+}
+.service-card:hover{
+    box-shadow: -5px -5px 10px var(--box-shadow-color),
+    1px 1px 8px var(--box-shadow-color);
+    padding-left: 2.5rem;
+}
+.service-card:hover::after{
+    width: 45rem;
+}
+.icon i{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+
+/*===== Portfolio Section =====*/
+.portfolio-card{
+    box-shadow: 5px 5px 10px var(--box-shadow-color);
+}
+.card-img-top{
+    transform: scale(1.03);
+    border-radius: 1rem 1rem 0 0;
+    transition: all .3s;
+}
+
+.portfolio-card:hover .card-img-top{
+    transform: scale(1);
+   opacity: .4;
+}
+.portfolio-card:hover .project-link{
+    opacity: 1;
+    top: 1rem;
+}
+.project-link{
+    position: absolute;
+    top: -2rem;
+    right: 2rem;
+    font-size: 2rem;
+    opacity: 0;
+    transition: all .3s;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+.project-link i{
+    color: var(--primary-color);
+    padding: 1rem;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+
+
+/* ====== Contact Section ======*/
+.contact-section{
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding-top: 5rem;
+}
+.contact-area{
+    width: 100%;
+    margin: 0rem auto;
+    padding: 7rem 0;
+    display: flex;
+    align-items: center;
+}
+.form-area{
+    width: 50%;
+    margin: 0 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px var(--box-shadow-color),
+    -1px -1px 8px var(--box-shadow-color);
+}
+.submit-btn{
+    color: var(--white);
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
+    padding: .5rem 1.5rem;
+}
+form label, .form-text{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+#name, #email, #message{
+    font-size: 1.6rem;
+}
+
+
+/*===== Map card =====*/
+.map-direction{
+    width: 50%;
+    height: 40rem;
+    margin: 0 2rem;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: -5px -5px 10px var(--box-shadow-color);
+}
+
+
+/*==== error 404 ====*/
+.error-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem 2rem;
+}
+.error-page img{
+    max-width: 25%;
+    padding: 2rem;
+}
+
+
+/*===== Footer Get started box =====*/
+.contact-short{
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding: 0 2rem;
+}
+.contact-short-section{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem var(--box-shadow-color);
+    padding: 4rem 7rem;
+    color: white;
+}
+.contact-short-section .btn{
+    background: var(--bg-color);
+}
+.contact-short-section .btn a{
+    color: var(--primary-color);
+}
+
+
+
+/*===== Main Footer section =====*/
+footer{
+    padding: 1rem 2rem;
+}
+footer .container{
+    padding: 6rem 2rem;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+}
+.footer-about{
+    max-width: 30%;
+}
+footer h3{
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+}
+.info-text{
+    font-size: 1.6rem;
+}
+.info-text a{
+    padding: 0 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .3s;
+}
+.info-text a:hover{
+    color: var(--primary-color);
+}
+.link a{
+    margin-right: 2.5rem;
+    color: var(--main-text-color);
+}
+.link a i{
+    font-size: 2.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    padding: 10px 12px;
+    transition: all .4s;
+}
+.link a i:hover{
+    transform: translateY(-1px);
+    color: var(--primary-color);
+}
+.footer-bottom{
+    max-width: 110rem;
+    margin: 0rem auto;
+    padding: 1rem 0;
+}
+.footer-bottom-end{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom-end p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    padding: .5rem 1rem;
+}
+
+
+/*====== Go to top button ======*/
+.go-To-Top{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.go-To-Top i{
+    font-size: 2rem;
+    color: var(--white);
+    animation: goTop 1s linear infinite alternate-reverse;
+}
+@keyframes goTop {
+    0%{
+        transform: translateY( -2px);
+    }
+    100%{
+        transform: translateY( 4px);
+    }
+}
+
+
+/*====== Tab or Medium Device Responsive CSS ======*/
+@media (max-width: 800px){
+    .navbar-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bg-color);
+        z-index: 99;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: all .1s;
+    }
+    .navbar-list li {
+        margin: 2rem 0;
+    }
+    .navbar-link {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+    .closeNav-btn{
+        display: none;
+        position: fixed;
+        top: 2rem;
+        right: 2.5rem;
+        z-index: 999;
+    }
+    .active .menu-btn{
+        display: none;
+    }
+    .active .closeNav-btn{
+        display: block;
+    }
+    .active .navbar-list{
+       transform: translateX(0);
+    }
+
+    .grid {
+        gap: 2rem;
+        padding: 7.5rem 2.5rem;
+    }
+    
+    .hero-heading {
+        letter-spacing: 0.1rem;
+        font-size: 3.8rem;
+        line-height: 3.5rem;
+    }
+    .hero-heading .myrole{
+        font-size: 2.2rem;
+    }
+    picture img {
+        width: 75%;
+    }
+
+    /* Footer social link */
+    .link a{
+        margin-right: 2rem;
+        color: var(--main-text-color);
+    }
+
+    .contact-area{
+        display: block;
+        padding: 0 3rem;
+    }
+    .form-area{
+        width: 100%;
+        margin: 0;
+    }
+    .map-direction{
+       margin: 0;
+       margin-top: 2.5rem;
+       width: 100%;
+    }
+
+    .contact-short-section{
+        padding: 4rem;
+    }
+}
+
+
+@media (max-width: 600px){
+    header {
+        padding: 1rem 2.5rem;
+        padding-bottom: 0rem;
+    }
+    .logo {
+       display: none;
+    }
+    .sm-logo-img{
+        display: block;
+    }
+    
+    .container {
+        padding: 6rem 2rem;
+    }
+    .card{      
+        margin: auto;
+    }
+    .grid {
+        gap: 3rem;
+        padding: 2rem;
+    }
+    .grid-two-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero-top-data{
+        margin-top: 2rem;
+    }
+    .hero-heading{
+        line-height: 4rem;
+    }
+    picture {
+        text-align: center;
+    }
+    picture img {
+        display: none;
+    }
+    .section-hero-data {
+        text-align: center;
+        line-height: 3rem;
+    }
+    .btn{
+        text-align: center;
+        margin: 2rem auto;
+    }
+    .btn a{
+        font-size: 1.8rem;
+    }
+
+    .ed-skl-card{
+        margin-bottom: 0rem;
+    }
+
+    .common-heading{
+        margin-bottom: 4rem;
+    }
+    .common-heading h1{
+        font-size: 3rem;
+    }
+
+    .contact-short-section{
+        text-align: center;
+        display: block;
+        padding: 1.5rem 1rem;
+        line-height: 4.5rem;
+        margin-top: 4rem;
+    }
+    .contact-short-section h3{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    .contact-short-section .btn a{
+        font-size: 1.6rem;
+    }
+    .contact-area{
+        padding: 1.5rem;
+    }
+
+    .footer-top{
+        display: block;
+        text-align: left;
+    }
+    .footer-about{
+        max-width: 100%;
+    }
+    .footer-social, .footer-contact{
+        margin-top: 4rem;
+    }
+    .link a i{
+        font-size: 2rem;
+    }
+    .footer-bottom{
+        padding: 1rem 0;
+    }
+    .footer-bottom-end{
+        display: block;
+    }
+    .footer-bottom-end p{
+        padding: 0 .5rem;
+    }
+    footer .container{
+        padding: 1.5rem;
+    }
+
+    .error-page img{
+        max-width: 80%;
+        padding: 2rem;
+    }
 }
