@@ -10,7 +10,7 @@ const Project = [
     id: 2,
     image: "./images/p-2.png",
     projectName: "Community Web Design",
-    projectLink:"#",
+    projectLink:"https://farhaanmalik.github.io/bloggingcommunity-Uidesign/",
 },
 {
     id: 3,
