@@ -107,7 +107,7 @@ hr {
 /*===== Hero section CSS =====*/
 .container {
     max-width: 110rem;
-    margin: 0rem auto;
+    margin: 5rem auto;
     padding: 6rem 2rem;
 }
 .section-hero-data {
@@ -124,7 +124,7 @@ hr {
 .hero-heading {
     letter-spacing: 0.1rem;
     font-size: 4.5rem;
-    line-height: 3.9rem;
+    line-height: 4.2rem;
 }
 .hero-heading .myrole{
     font-size: 3rem;
@@ -135,7 +135,7 @@ hr {
 }
 
 .hero-para {
-    margin-top: .8rem;
+    margin-top: 1rem;
     font-size: 1.6rem;
     color: var(--text-color);
 }
@@ -594,7 +594,9 @@ footer h3{
         gap: 2rem;
         padding: 7.5rem 2.5rem;
     }
-    
+    .container {
+    margin: 3rem auto;
+    }
     .hero-heading {
         letter-spacing: 0.1rem;
         font-size: 3.8rem;
