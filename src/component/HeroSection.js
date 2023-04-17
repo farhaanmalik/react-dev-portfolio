@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 
-const HeroSection = ({subhead, name, myRole, myInfo, image,}) => {
+const HeroSection = ({ subhead, name, myRole, myInfo, image }) => {
     return (
         <> 
         {/*=============== Home section ===============*/}

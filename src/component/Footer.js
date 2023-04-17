@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div>
             <button className='btn'>
-              <NavLink to="/">Get Started</NavLink>
+              <a href="https://t.me/webdvplr" target="_blank">Get Started</a>
             </button>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="footer-top">
             <div className='footer-about'>
               <h3>the.Farhaan</h3>
-              <p className="hero-para">Building and Maintaining responive websites. I am available to do freelancing work.</p>
+              <p className="hero-para">Building and Maintaining responive websites. Feel free contact me.</p>
             </div>
             <div className='footer-social'>
               <h3>Connect with Me</h3>
@@ -45,11 +45,11 @@ const Footer = () => {
               <h3>Contact us</h3>
               <div className="info-text">
                 <span>Phone: </span>
-                <span><a href="">+91 7380 3842 70</a></span>
+                <span><a href="tel:7380 3842 70">+91 7380 3842 70</a></span>
               </div>
               <div className="info-text">
                 <span>Email: </span>
-                <span><a href="">admin@example.com</a></span>
+                <span><a href="mailto:thefarhan68@gmail.com">thefarhan68@gmail.com</a></span>
               </div>
             </div>
           </div>
