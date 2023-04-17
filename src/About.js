@@ -1,5 +1,7 @@
 import React from 'react';
 import HeroSection from './component/HeroSection';
+import Educations from './component/Educations'
+import Skills from './component/Skills'
 
 const About = () => {
 
@@ -21,37 +23,12 @@ const About = () => {
         </div>
 
         <div className="card-container grid grid-two-column ">
-          <div className="ed-skl-card">
-            <h2 className='px-4'>My Educations</h2>
-            <div className="edt-card">
-              <div className="education-box">
-                <h4>Bachelor Of Computer Applications</h4>
-                <p>2022 - Present</p>
-              </div>
-              <div className="education-box">
-                <h4>Inter Mediate</h4>
-                <p>2019 - 2021</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="ed-skl-card">
-            <h2 className='px-4'>My Skills</h2>
-            <div className="skill-box">
-              <span className='skill'>HTML</span>
-              <span className='skill'>CSS</span>
-              <span className='skill'>Bootstrap</span>
-              <span className='skill'>Material UI</span>
-              <span className='skill'>Basic JavaScript</span>
-              <span className='skill'>Basic React</span>
-              <span className='skill'>Rest API</span>
-            </div>
-          </div>
+          <Educations />
+          <Skills />
         </div>
-
       </div>
-    </>
-  )
+      </>
+      )
 }
 
-export default About
+      export default About
