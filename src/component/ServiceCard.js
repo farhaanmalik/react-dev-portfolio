@@ -37,7 +37,7 @@ const ServiceCard = () => {
                             <i className="fa-solid fa-database"></i>
                         </div>
                         <h1 className='my-4'>Rest API</h1>
-                        <p className="hero-para my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ea animi amet, perferendis vel error sapiente. Et repudiandae voluptatibus sapiente.</p>
+                        <p className="hero-para my-4">Learning and Building RestAPI. I will create your RestAPI with using of latest tools like Node, Express and MongoDB.</p>
                     </div>
                 </div>
             </div>
