@@ -9,7 +9,7 @@ const About = () => {
     subhead: "WHO I AM",
     name: "Farhaan Malik",
     image: "./images/about.jpg",
-    myInfo: "A Front-end Developer for building websites & exploring new web design with Responsive mobile. Highly skilled in HTML CSS Bootstrap and working knowledge of JavaScript. Learning Advances JavaScript and ReactJs. I am deeply interested in MERN STACK development.",
+    myInfo: "A Front-end Developer for building websites & exploring new web design with Responsive mobile. Highly skilled in HTML CSS Bootstrap and working knowledge of JavaScript, React and Firebase. Learning Advances JavaScript and ReactJs. I am deeply interested in MERN STACK development.",
   }
 
   return (
