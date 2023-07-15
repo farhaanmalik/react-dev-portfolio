@@ -1,14 +1,14 @@
 const Project = [
     {
     id: 1,
-    image: "./images/quizapp.png",
+    image: "./images/p-9.png",
     projectName: "Simple Quiz App",
     projectLink:"https://codingquizapp.vercel.app/",
     
 },
     {
     id: 2,
-    image: "./images/weatherapp.png",
+    image: "./images/p-10.png",
     projectName: "React - Weather App",
     projectLink:"https://liveweather-app.vercel.app/",
     
