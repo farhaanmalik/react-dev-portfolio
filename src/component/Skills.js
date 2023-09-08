@@ -13,6 +13,7 @@ const Skills = () => {
                     <span className='skill'>JavaScript</span>
                     <span className='skill'>ReactJS</span>
                     <span className='skill'>Firebase</span>
+                    <span className='skill'>Git & GitHub</span>
                 </div>
             </div>
         </>

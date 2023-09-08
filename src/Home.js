@@ -6,11 +6,11 @@ import Contact from './Contact'
 const Home = () => {
 
   const data = {
-    subhead: "Hey There! I am",
+    subhead: "Hey There ! I'm ",
     name: "Farhaan Malik",
     myRole: "Frontend Developer",
-    myInfo: "Building & Maintaining responsive websites. Exploring new Web designs. Converting Figma design into HTML Code.",
-    image: "../images/main.jpg",
+    myInfo: "Building & Maintaining responsive websites. I would like to implement a new web design & convert Figma design into Reusable code.",
+    image: "../images/profile.jpg",
   }
   return (
     <>

@@ -9,13 +9,12 @@ const About = () => {
     subhead: "WHO I AM",
     name: "Farhaan Malik",
     image: "./images/about.jpg",
-    myInfo: "A Front-end Developer for building websites & exploring new web design with Responsive mobile. Highly skilled in HTML CSS Bootstrap and working knowledge of JavaScript, React and Firebase. Learning Advances JavaScript and ReactJs. I am deeply interested in MERN STACK development.",
+    myInfo: "A Self-taught Front-end Developer for building websites & exploring new web design with Responsive mobile.Highly skilled in HTML CSS Bootstrap and working knowledge of JavaScript, React and Firebase. Learning Advances JavaScript and ReactJs. I am deeply interested in MERN STACK development.",
   }
 
   return (
     <>
       <HeroSection {...data} />
-
       <div className="about-section">
         <div className="common-heading">
           <p className='common-subheading mb-2'>My Educations & Skills</p>
@@ -27,8 +26,8 @@ const About = () => {
           <Skills />
         </div>
       </div>
-      </>
-      )
+    </>
+  )
 }
 
-      export default About
+export default About

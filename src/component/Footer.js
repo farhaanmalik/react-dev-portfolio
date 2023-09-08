@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import Social from './Social'
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div>
             <button className='btn'>
-              <a href="https://t.me/webdvplr" target="_blank">Get Started</a>
+              <a href="https://t.me/frontdevlp" target="_blank" rel='noreferrer'>Get Started</a>
             </button>
           </div>
         </div>
@@ -29,17 +29,7 @@ const Footer = () => {
             </div>
             <div className='footer-social'>
               <h3>Connect with Me</h3>
-              <div className="slinks d-flex mt-4 pt-2">
-                <div className="link">
-                  <a href="https://t.me/webdvplr" target="_blank"><i className="fa-brands fa-telegram"></i></a>
-                </div>
-                <div className="link">
-                  <a href="https://www.linkedin.com/in/farhaan-malik-1b4022230/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                </div>
-                <div className="link">
-                  <a href="https://github.com/farhaanmalik" target="_blank"><i className="fa-brands fa-github"></i></a>
-                </div>
-              </div>
+              <Social />
             </div>
             <div className="footer-contact">
               <h3>Contact us</h3>
@@ -58,10 +48,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <hr />
           <div className="footer-bottom-end p-4">
-            <p>@{new Date().getFullYear()} the.Farhaan. All Rights Reserved</p>
-            <div className='d-flex justify-content-between'>
-              <p>Privacy Policy</p>
-              <p>Terms & Conditions</p>
+            <p>© {new Date().getFullYear()} the.Farhaan. All Rights Reserved</p>
+            <div>
+              <p>Made with love and React.Js...</p>
             </div>
           </div>
         </div>
