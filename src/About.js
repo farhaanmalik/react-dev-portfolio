@@ -9,7 +9,7 @@ const About = () => {
     subhead: "WHO I AM",
     name: "Farhaan Malik",
     image: "./images/about.jpg",
-    myInfo: "A Self-taught Front-end Developer for building websites & exploring new web design with Responsive mobile.Highly skilled in HTML CSS Bootstrap and working knowledge of JavaScript, React and Firebase. Learning Advances JavaScript and ReactJs. I am deeply interested in MERN STACK development.",
+    myInfo: `A passionate Frontend Developer currently pursuing Bachelor's degree in Computer Applications. I specialize in HTML/CSS for pixel-perfect designs, JavaScript for interactivity and dynamic UIs and Frontend frameworks like Bootstrap, Tailwind CSS & React.Js. Let's connect to discuss potential projects.`,
   }
 
   return (

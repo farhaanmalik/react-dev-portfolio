@@ -12,7 +12,7 @@ const Footer = () => {
           </div>
           <div>
             <button className='btn'>
-              <a href="https://t.me/frontdevlp" target="_blank" rel='noreferrer'>Get Started</a>
+              <a href="https://t.me/farhaan005" target="_blank" rel='noreferrer'>Get Started</a>
             </button>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="info-text">
                 <span>Email: </span>
-                <span><a href="mailto:thefarhan68@gmail.com">thefarhan68@gmail.com</a></span>
+                <span><a href="mailto:farhaanmalik005@gmail.com">farhaanmalik005@gmail.com</a></span>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
           <div className="footer-bottom-end p-4">
             <p>© {new Date().getFullYear()} the.Farhaan. All Rights Reserved</p>
             <div>
-              <p>Made with love and React.Js...</p>
+              <p>Made with React.Js</p>
             </div>
           </div>
         </div>

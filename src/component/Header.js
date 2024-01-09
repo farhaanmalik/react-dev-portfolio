@@ -10,7 +10,7 @@ const Header = () => {
         <header>
             <NavLink to="/" className='navbar-link logo-link'>
                 <h2 className='logo'><span>the.</span>farhaan</h2>
-                <img src="./images/profile.jpg" className='sm-logo-img' alt="" />
+                <img src="./images/main.jpg" className='sm-logo-img' alt="" />
             </NavLink>
             <Navbar />
             
