@@ -720,7 +720,12 @@ footer h3 {
     }
 
     .container {
-        padding: 6rem 2rem;
+        padding: 0rem 2rem;
+        margin: 0rem auto;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .card {
