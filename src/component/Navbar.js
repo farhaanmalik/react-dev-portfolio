@@ -21,9 +21,9 @@ const Navbar = () => {
                     <li>
                         <NavLink to="/portfolio"  onClick={()=> {setOpenMenu(false)}} className='navbar-link'>Portfolio</NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/contact"  onClick={()=> {setOpenMenu(false)}} className='navbar-link'>Contact Us</NavLink>
-                    </li>
+                    </li> */}
                 </ul>
                 <div className="mobile-navbar-btn d-flex align-items-center">
                     <div className="openNav-btn menu-btn" 

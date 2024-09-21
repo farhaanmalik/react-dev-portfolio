@@ -1,7 +1,7 @@
 import React from 'react';
-import HeroSection from './component/HeroSection';
+import HeroSection from '../component/HeroSection';
 import Service from './Services';
-import Contact from './Contact'
+import Portfolio from './Portfolio';
 
 const Home = () => {
 
@@ -16,7 +16,9 @@ const Home = () => {
     <>
       <HeroSection { ...data }/>
       <Service />
-      <Contact />
+      <div className='work-container'>
+      <Portfolio />
+      </div>
     </>
   )
 }

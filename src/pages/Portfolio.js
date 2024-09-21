@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import PortfolioCard from './component/PortfolioCard'
-import Project from './component/ProjectData'
+import PortfolioCard from '../component/PortfolioCard'
+import Project from '../component/ProjectData'
 
 const Portfolio = () => {
 
@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <section className="card-section container">
+      <section className="card-section">
         <div className="common-heading">
           <p className='common-subheading mb-2'>What I Have Done</p>
           <h1>Visit My Projects</h1>

@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import Home from './Home';
-import About from './About';
-import Services from './Services';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Portfolio from './pages/Portfolio';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './component/Header';
 import Footer from './component/Footer';
-import Error from './Error';
+import Error from './pages/Error';
 import GoTotop from './GoTotop';
 import Loading from './component/Loading';
 
@@ -34,7 +33,6 @@ const App = () => {
               <Route path='/about' element={<About />} />
               <Route path='/services' element={<Services />} />
               <Route path='/portfolio' element={<Portfolio />} />
-              <Route path='/contact' element={<Contact />} />
               <Route path='*' element={<Error />} />
             </Routes>
             <Footer />
